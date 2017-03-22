@@ -2,6 +2,7 @@ package com.example;
 
 import org.springframework.boot.*;
 import org.springframework.boot.autoconfigure.*;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.*;
 import org.springframework.web.bind.annotation.*;
 
@@ -9,7 +10,8 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @EnableAutoConfiguration
 @SpringBootApplication
-public class DemoApplication {
+@ComponentScan
+public class DBApplication {
 
 	@RequestMapping("/")
 	String home() {
@@ -17,6 +19,6 @@ public class DemoApplication {
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(DBApplication.class, args);
 	}
 }
