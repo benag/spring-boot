@@ -1,0 +1,26 @@
+
+<html ng-app="todoApp">
+<head>
+    <!-- META -->
+    <meta charset="utf-8">
+    <!-- Optimize mobile viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Todo App</title>
+
+    <!-- load bootstrap -->
+    <link href="vendor/bootstrap-css-only/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/todoApp.css">
+</head>
+<body>
+
+<div ng-include="'app/views/header.view.html'"></div>
+<div id="main" ng-include="'app/views/todo.view.html'"></div>
+<div ng-include="'app/views/footer.view.html'"></div>
+
+<script src="vendor/angular/angular.min.js"></script>
+<script src="app/app.js"></script>
+<script src="app/services/todo.service.js"></script>
+<script src="app/controllers/todo.controller.js"></script>
+</body>
+</html>

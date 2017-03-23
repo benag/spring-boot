@@ -1,4 +1,4 @@
-package com.example;
+package com.mdmotion;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
